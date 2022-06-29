@@ -1,3 +1,17 @@
+import React, { useState } from "react";
+import MountExample from "./MountExample";
+
 export default function App() {
-  return <p></p>;
+  const [show, setShow] = useState(true);
+  return (
+    <>
+      <button onClick={() => setShow(true)} disabled={show}>
+        show
+      </button>
+      <button onClick={() => setShow(false)} disabled={!show}>
+        Hide
+      </button>
+      {show && <MountExample name="shay"></MountExample>}
+    </>
+  );
 }
