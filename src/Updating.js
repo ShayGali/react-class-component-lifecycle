@@ -35,7 +35,7 @@ export default class Updating extends Component {
     return null;
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState, snapshot) {
     console.log("5.in componentDidUpdate");
   }
 }
