@@ -24,8 +24,4 @@ export default class Mounting extends Component {
   componentDidMount() {
     console.log("4.in componentDidMount");
   }
-
-  componentWillUnmount() {
-    console.log("5.in componentWillUnmount");
-  }
 }
