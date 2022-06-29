@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-export default class MountExample extends Component {
+export default class Mounting extends Component {
   constructor(props) {
     super(props);
     this.state = { name: "" };
-    console.log("in constructor");
+    console.log("1.in constructor");
   }
   static getDerivedStateFromProps(props, state) {
-    console.log("in getDerivedStateFromProps");
+    console.log("2.in getDerivedStateFromProps");
     if (props.name != null && props.name !== state.name) {
       return {
         name: props.name,
@@ -17,15 +17,15 @@ export default class MountExample extends Component {
   }
 
   render() {
-    console.log("in render");
+    console.log("3.in render");
     return <p>My name is:{this.state.name}</p>;
   }
 
   componentDidMount() {
-    console.log("in componentDidMount");
+    console.log("4.in componentDidMount");
   }
 
   componentWillUnmount() {
-    console.log("in componentWillUnmount");
+    console.log("5.in componentWillUnmount");
   }
 }

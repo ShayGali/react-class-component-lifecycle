@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MountExample from "./MountExample";
+import MountExample from "./Mounting";
 
 export default function App() {
   const [show, setShow] = useState(true);
