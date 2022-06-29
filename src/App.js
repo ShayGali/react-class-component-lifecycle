@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MountExample from "./Mounting";
+import Unmounting from "./Unmounting";
 
 export default function App() {
   const [show, setShow] = useState(true);
@@ -11,7 +11,7 @@ export default function App() {
       <button onClick={() => setShow(false)} disabled={!show}>
         Hide
       </button>
-      {show && <MountExample name="shay"></MountExample>}
+      {show && <Unmounting></Unmounting>}
     </>
   );
 }
